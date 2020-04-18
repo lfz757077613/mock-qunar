@@ -35,3 +35,4 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 - npm install --save vuex
 - npm install --save babel-polyfill
 - npm i element-ui -S
+- npm i @babel/preset-env -D
