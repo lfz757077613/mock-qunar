@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <router-link to="/">
-      <span class="iconfont back-icon">&#xe624;</span>
+      <i class="el-icon-arrow-left"/>
     </router-link>
     城市选择
   </div>
@@ -23,7 +23,7 @@ export default {
     background $bgColor
     color #fff
     font-size .32rem
-    .back-icon
+    .el-icon-arrow-left
       position absolute
       top 0
       left 0
@@ -32,5 +32,5 @@ export default {
       height $headerHeight
       line-height $headerHeight
       color #fff
-      font-size .4rem
+      font-size .6rem
 </style>

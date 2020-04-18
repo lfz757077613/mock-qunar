@@ -5,7 +5,7 @@
       <div class="banner-info">
         <div class="banner-tittle" v-text="detailInfo.title"></div>
         <div class="banner-number">
-          <span class="iconfont banner-icon">&#xe632;</span>
+          <i class="el-icon-picture"/>
           {{detailInfo.imgList.length}}
         </div>
       </div>
@@ -46,6 +46,9 @@ export default {
     opacity: 0
   .v-enter-active, .v-leave-active
     transition: opacity .5s
+
+  .el-icon-picture
+    padding-right .1rem
   .banner
     position: relative
     overflow: hidden
@@ -69,12 +72,13 @@ export default {
         padding: 0 .2rem
         ellipsis()
       .banner-number
+        display flex
+        align-items center
+        justify-content center
         height: .32rem
         line-height: .32rem
         padding: 0 .4rem
         border-radius: .2rem
         background: rgba(0, 0, 0, .8)
         font-size: .24rem
-        .banner-icon
-          font-size: .24rem
 </style>

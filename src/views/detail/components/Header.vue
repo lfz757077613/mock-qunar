@@ -1,11 +1,11 @@
 <template>
   <div class="header">
     <router-link tag="div" class="header-abs" v-show="showAbs" to="/">
-      <span class="iconfont back-icon">&#xe624;</span>
+      <i class="el-icon-arrow-left"/>
     </router-link>
     <div class="header-fixed" v-show="!showAbs" :style="opacityStyle">
       <router-link to="/">
-        <span class="iconfont back-icon">&#xe624;</span>
+        <i class="el-icon-arrow-left"/>
       </router-link>
       景点详情
     </div>
@@ -52,6 +52,9 @@ export default {
   @import '~@/assets/styles/varibles.styl'
   .header-abs
     z-index 1
+    display flex
+    align-items center
+    justify-content center
     position absolute
     left .2rem
     top .2rem
@@ -61,7 +64,7 @@ export default {
     border-radius .35rem
     background rgba(0 0 0 .7)
     text-align center
-    .back-icon
+    .el-icon-arrow-left
       color #fff
       font-size .4rem
   .header-fixed
@@ -76,12 +79,11 @@ export default {
     color #fff
     background $bgColor
     font-size .32rem
-    .back-icon
+    .el-icon-arrow-left
+      height $headerHeight
+      line-height $headerHeight
       position absolute
-      top 0
       left 0
-      width .64rem
-      text-align center
-      font-size .4rem
+      font-size .6rem
       color #fff
 </style>
