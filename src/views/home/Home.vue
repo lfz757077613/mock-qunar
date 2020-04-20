@@ -7,7 +7,6 @@
       <home-recommend :recommendList="recommendList"/>
       <home-weekend :weekendList="weekendList"/>
     </div>
-    <div class="play-wrapper">
       <aplayer ref="player" autoplay :float="true" theme="#00bcd4" :music="{
           title: '我的名字',
           artist: '陈法律',
@@ -15,7 +14,6 @@
           // src: 'http://192.168.0.103:8888/api/music',
       }"/>
     </div>
-  </div>
 </template>
 
 <script>
@@ -171,9 +169,7 @@ export default {
   @import '~@/assets/styles/varibles.styl'
   .aplayer
     margin 0
-  .play-wrapper
     width 100%
     position fixed
     bottom 0
-    z-index 99
 </style>
