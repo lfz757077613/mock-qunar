@@ -1,7 +1,7 @@
 # 主页效果图(https://www.laifuzhi.cn)
 > 额外增加了一个音乐播放器，我的机器是1Mbps，所以加载比较慢...
 
-![主页](https://upload-images.jianshu.io/upload_images/7504966-0709e8a121046ff0.png?imageMogr2/auto-orient/strip|imageView2/2/w/1080)
+![主页](https://upload-images.jianshu.io/upload_images/7504966-102e5f5309d77a92.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/277)
 
 # vue-learn
 
