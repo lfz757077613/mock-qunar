@@ -1,12 +1,10 @@
 <template>
   <div class="home">
-    <div @click="handleClick">
-      <home-header/>
-      <home-banner :bannerList="bannerList"/>
-      <home-icons :iconList="iconList"/>
-      <home-recommend :recommendList="recommendList"/>
-      <home-weekend :weekendList="weekendList"/>
-    </div>
+    <home-header/>
+    <home-banner :bannerList="bannerList"/>
+    <home-icons :iconList="iconList"/>
+    <home-recommend :recommendList="recommendList"/>
+    <home-weekend :weekendList="weekendList"/>
     <aplayer ref="player" autoplay :float="true" theme="#00bcd4" :music="{
         title: '我的名字',
         artist: '陈法律',
@@ -48,9 +46,6 @@ export default {
       }).catch(function (error) {
         console.log(error)
       })
-    },
-    handleClick () {
-      this.$refs.player.play()
     }
   },
   mounted () {
