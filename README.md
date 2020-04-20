@@ -1,6 +1,8 @@
 # 主页效果图(https://www.laifuzhi.cn)
 > 额外增加了一个音乐播放器，我的机器是1Mbps，所以加载比较慢...
+
 ![主页](./主页.png)
+
 # vue-learn
 
 ## Project setup
