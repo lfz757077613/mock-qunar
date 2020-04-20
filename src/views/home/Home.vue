@@ -50,7 +50,6 @@ export default {
       })
     },
     handleClick () {
-      console.log('click')
       this.$refs.player.play()
     }
   },
