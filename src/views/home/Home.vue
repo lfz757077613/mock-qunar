@@ -10,8 +10,8 @@
     <aplayer ref="player" autoplay :float="true" theme="#00bcd4" :music="{
         title: '我的名字',
         artist: '陈法律',
-        src: 'https://www.laifuzhi.cn/music.mp3',
-        // src: 'http://192.168.0.103:8888/api/music',
+        src: 'https://www.laifuzhi.cn/music.mp3'
+        // src: 'http://192.168.0.103:8888/api/music'
     }"/>
     </div>
 </template>
