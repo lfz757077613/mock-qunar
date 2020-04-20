@@ -9,6 +9,7 @@ import 'babel-polyfill'
 import store from './store'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import 'swiper/dist/css/swiper.css'
+// 怕重名可以使用as import xxx as xxx from xxx
 import { icon } from 'element-ui'
 import './assets/styles/element-#00BCD4/index.css'
 import './assets/styles/reset.css'

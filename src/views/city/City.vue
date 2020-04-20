@@ -15,6 +15,8 @@ import CityAlphabet from './components/Alphabet'
 export default {
   name: 'City',
   components: {
+    // 组件按需引入
+    // CityHeader: () => import('./components/Header'),
     CityHeader,
     CitySearch,
     CityList,

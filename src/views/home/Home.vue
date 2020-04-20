@@ -1,10 +1,20 @@
 <template>
   <div class="home">
-    <home-header/>
-    <home-banner :bannerList="bannerList"/>
-    <home-icons :iconList="iconList"/>
-    <home-recommend :recommendList="recommendList"/>
-    <home-weekend :weekendList="weekendList"/>
+    <div @click="handleClick">
+      <home-header/>
+      <home-banner :bannerList="bannerList"/>
+      <home-icons :iconList="iconList"/>
+      <home-recommend :recommendList="recommendList"/>
+      <home-weekend :weekendList="weekendList"/>
+    </div>
+    <div class="play-wrapper">
+      <aplayer ref="player" autoplay :float="true" theme="#00bcd4" :music="{
+          title: '我的名字',
+          artist: '陈法律',
+          src: 'https://www.laifuzhi.cn/music.mp3',
+          // src: 'http://192.168.0.103:8888/api/music',
+      }"/>
+    </div>
   </div>
 </template>
 
@@ -14,6 +24,8 @@ import HomeBanner from './components/Banner'
 import HomeIcons from './components/Icons'
 import HomeRecommend from './components/Recommend'
 import HomeWeekend from './components/Weekend'
+import aplayer from 'vue-aplayer'
+aplayer.disableVersionBadge = true
 export default {
   name: 'Home',
   components: {
@@ -21,7 +33,8 @@ export default {
     HomeBanner,
     HomeIcons,
     HomeRecommend,
-    HomeWeekend
+    HomeWeekend,
+    aplayer
   },
   methods: {
     getHomeInfo () {
@@ -37,6 +50,9 @@ export default {
       }).catch(function (error) {
         console.log(error)
       })
+    },
+    handleClick () {
+      this.$refs.player.play()
     }
   },
   mounted () {
@@ -150,3 +166,14 @@ export default {
   }
 }
 </script>
+
+<style lang="stylus" scoped>
+  @import '~@/assets/styles/varibles.styl'
+  .aplayer
+    margin 0
+  .play-wrapper
+    width 100%
+    position fixed
+    bottom 0
+    z-index 99
+</style>

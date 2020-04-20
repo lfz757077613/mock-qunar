@@ -36,3 +36,5 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 - npm install --save babel-polyfill
 - npm i element-ui -S
 - npm i @babel/preset-env -D
+- npm i vue-aplayer -S
+- npm install --save hls.js
